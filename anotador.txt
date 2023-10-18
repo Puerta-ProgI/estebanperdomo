@@ -1,0 +1,54 @@
+(JavaScrip)
+-
+muy importante recordar el console.log(). Sirve para "imprimir" lo necesario
+para algo especifico es ej: console.log(pokemon.color)
+-
+Para guardar informacion se hace en variables (let y const)
+ej: let nombre=valor ----> let listaDeCompra="5 cosas a comprar"
+Si es un string va en comillas, si es un numero va solo el numero
+-
+Objetos
+ej: let pokemon={
+    propiedad:valor
+//  nombre   :"raichu",(al final de cada propiedad se le pone una coma)
+color:"amarillo",
+}
+-
+Funciones (toda funcion debe retornar algo)
+Para definir una funcion ej://parametro es toda informacion que venga de afuera y puede haber tantas funciones como sea necesario//
+function nombre(parametro 1, parametro 2){
+    return n1+n2//siempre que se tenga que retornar algo. Al lado lo que desea retornar//
+}
+-
+Document.metodo(DOM): ofrece distintas funcionalidades a traves del console.log
+Funcionalidades mas comunes: 
+Seleccionar//devuelve elementos (3 formar):.querySelector("string"); querySelectorAll("string") 
+Ej: document.querySelectorAll("h2.titulo")
+document.querySelector("#titulo")
+Guardar: Selecciona el elemento y lo guarda en una variable
+let a=document.quarySelector("#A)
+el console.log seria = <a id="a">A</a>
+--
+a.innerHTML="b" //si pones+= concatena el contenido original mas la modificación ej: a b 
+innerHTML agrega un elemento de lista.
+ul.innerHTML=(se agrega acomillas si se quiere agregar una etiqueta concreta)
+Ej:innerHTML="<li>"color.nombre"</li>"
+arreglo.(funcition(elemento,indice,arreglo))
+EJ: colores.forEach(function(color) {
+    ul.innerHTML=´<li>${color.nombre}</li>´
+})
+-
+classList(modificar la clase)
+ej: li.classList()
+---
+Propiedad .lenght/find/filter/map/forEach (toda funcion debe retornar algo)
+---
+Eventos
+addEventListener(tipo,funcion) tipos:click-hover-dblclick-keypress-input
+EJ: ul.addEventListener(
+"click",()=>{alrt("algo")}
+)
+arrowfunction(()=> es una funcion{})
+---
+fetch(url) (devuelve una promesa)
+funcion activa de js
